@@ -1,4 +1,4 @@
-# Last updated: 8/14/2025, 9:34:36 PM
+# Last updated: 8/23/2025, 4:37:53 PM
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -16,5 +16,5 @@ class Solution:
 
             if slow is fast:
                 return True
-        
+
         return False
