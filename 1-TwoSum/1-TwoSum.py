@@ -1,10 +1,10 @@
-# Last updated: 8/13/2025, 11:02:39 PM
+# Last updated: 8/30/2025, 1:10:52 PM
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        seen = {}
+        hash_map = {}
 
         for index, num in enumerate(nums):
             complement = target - num
-            if complement in seen:
-                return [seen[complement], index]
-            seen[num] = index
+            if complement in hash_map:
+                return [hash_map[complement], index]
+            hash_map[num] = index
