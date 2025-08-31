@@ -1,7 +1,7 @@
-# Last updated: 8/30/2025, 12:46:28 PM
+# Last updated: 8/31/2025, 4:39:00 PM
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        count_s , count_t = {}, {}
+        count_s, count_t = {}, {}
 
         if len(s) != len(t):
             return False
