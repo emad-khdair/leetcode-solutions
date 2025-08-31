@@ -1,4 +1,4 @@
-# Last updated: 8/31/2025, 6:40:15 PM
+# Last updated: 8/31/2025, 6:47:41 PM
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         freq = defaultdict(int)
@@ -12,6 +12,5 @@ class Solution:
             heapq.heappush(heap, (freq, num))
             if len(heap) > k:
                 heapq.heappop(heap)
-
+        
         return [num for (freq, num) in heap]
-
