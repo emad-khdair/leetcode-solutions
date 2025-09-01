@@ -1,4 +1,4 @@
-# Last updated: 8/31/2025, 5:22:40 PM
+# Last updated: 9/1/2025, 7:42:30 PM
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         anagram_map = defaultdict(list)
