@@ -1,4 +1,4 @@
-# Last updated: 8/31/2025, 4:35:45 PM
+# Last updated: 9/1/2025, 7:33:55 PM
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         seen = set()
@@ -7,5 +7,5 @@ class Solution:
             if num in seen:
                 return True
             seen.add(num)
-
+        
         return False
