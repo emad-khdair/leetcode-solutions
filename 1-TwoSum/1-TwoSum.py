@@ -1,4 +1,4 @@
-# Last updated: 9/1/2025, 7:39:56 PM
+# Last updated: 9/2/2025, 9:33:21 PM
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         num_map = {}
@@ -9,4 +9,4 @@ class Solution:
                 return [num_map[complement], index]
             num_map[num] = index
 
-        
+    
