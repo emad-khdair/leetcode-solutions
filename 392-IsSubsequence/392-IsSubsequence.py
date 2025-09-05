@@ -1,10 +1,10 @@
-# Last updated: 8/20/2025, 6:37:22 PM
+# Last updated: 9/5/2025, 8:48:27 PM
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
-        if s == '':
+        if len(s) == 0:
             return True
         
-        if len(s) > len(t):
+        if len(t) == 0:
             return False
 
         i, j = 0, 0
