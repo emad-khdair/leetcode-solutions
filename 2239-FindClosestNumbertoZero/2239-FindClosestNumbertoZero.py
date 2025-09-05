@@ -1,4 +1,4 @@
-# Last updated: 9/5/2025, 5:05:04 PM
+# Last updated: 9/5/2025, 5:21:04 PM
 class Solution:
     def findClosestNumber(self, nums: List[int]) -> int:
         closest = nums[0]
