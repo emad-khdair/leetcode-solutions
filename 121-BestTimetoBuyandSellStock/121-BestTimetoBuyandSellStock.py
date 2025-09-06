@@ -1,4 +1,4 @@
-# Last updated: 9/5/2025, 10:10:16 PM
+# Last updated: 9/6/2025, 8:57:17 PM
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         max_profit = 0
