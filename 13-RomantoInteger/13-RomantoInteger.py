@@ -1,7 +1,7 @@
-# Last updated: 9/9/2025, 8:35:31 PM
+# Last updated: 9/12/2025, 9:05:11 PM
 class Solution:
     def romanToInt(self, s: str) -> int:
-        roman_map = {
+        d = {
             "I": 1,
             "V": 5,
             "X": 10,
@@ -12,14 +12,14 @@ class Solution:
         }
 
         i = 0
-        count = 0
+        output = 0
 
         while i < len(s):
-            if i + 1 < len(s) and roman_map[s[i]] < roman_map[s[i + 1]]:
-                count += roman_map[s[i + 1]] - roman_map[s[i]]
+            if i + 1 < len(s) and d[s[i]] < d[s[i + 1]]:
+                output += d[s[i + 1]] - d[s[i]]
                 i += 2
             else:
-                count += roman_map[s[i]]
+                output += d[s[i]]
                 i += 1
 
-        return count
+        return output
