@@ -1,19 +1,14 @@
-# Last updated: 9/12/2025, 8:40:17 PM
+# Last updated: 9/12/2025, 8:41:40 PM
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         merged = []
-        i, j = 0, 0
+        max_length = max(len(word1), len(word2))
 
-        while i < len(word1) and j < len(word2):
-            merged.append(word1[i])
-            merged.append(word2[j])
-            i += 1
-            j += 1
+        for i in range(max_length):
+            if i < len(word1):
+                merged.append(word1[i])
 
-        if i < len(word1):
-            merged.append(word1[i:])
-
-        if j < len(word2):
-            merged.append(word2[j:])
+            if i < len(word2):
+                merged.append(word2[i])
 
         return "".join(merged)
