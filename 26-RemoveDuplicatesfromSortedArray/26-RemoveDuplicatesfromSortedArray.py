@@ -1,4 +1,4 @@
-# Last updated: 11/1/2025, 3:16:28 PM
+# Last updated: 11/1/2025, 6:42:42 PM
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         n = len(nums)
