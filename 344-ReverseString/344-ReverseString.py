@@ -1,8 +1,14 @@
-# Last updated: 11/2/2025, 9:25:46 PM
+# Last updated: 11/2/2025, 9:29:30 PM
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         """
         Do not return anything, modify s in-place instead.
         """
-        s.reverse()
+        l = 0
+        r = len(s) - 1
+
+        while l < r:
+            s[l], s[r] = s[r], s[l]
+            l += 1
+            r -= 1
         
