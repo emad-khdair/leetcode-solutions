@@ -1,15 +1,15 @@
-# Last updated: 9/1/2025, 7:36:41 PM
+# Last updated: 11/9/2025, 6:16:27 PM
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        count_s, count_t = {}, {}
+        s_map = {}
+        t_map = {}
 
-        if len(s) != len(t):
-            return False
+        for char in s:
+            s_map[char] = s_map.get(char, 0) + 1
 
-        for ch in s:
-            count_s[ch] = count_s.get(ch, 0) + 1
+        for char in t:
+            t_map[char] = t_map.get(char, 0) + 1
 
-        for ch in t:
-            count_t[ch] = count_t.get(ch, 0) + 1
+        return s_map == t_map
 
-        return count_s == count_t
+        
