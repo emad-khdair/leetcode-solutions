@@ -1,8 +1,8 @@
-# Last updated: 11/10/2025, 7:57:34 PM
+# Last updated: 11/14/2025, 8:19:02 PM
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        s_map = {')': '(', ']': '[', '}': '{'}
+        s_map = {")": "(", "}": "{", "]": "["}
 
         for char in s:
             if char in s_map.values():
@@ -13,5 +13,3 @@ class Solution:
                 return False
 
         return not stack
-
-        
