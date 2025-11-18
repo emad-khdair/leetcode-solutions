@@ -1,4 +1,4 @@
-# Last updated: 11/9/2025, 6:16:27 PM
+# Last updated: 11/18/2025, 8:58:34 PM
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         s_map = {}
